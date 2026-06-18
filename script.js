@@ -12,22 +12,30 @@ const translations = {
   "About": "关于",
   "Home": "首页",
   "Open Resume PDF": "打开英文简历",
+  "English Resume": "英文简历",
+  "中文简历": "中文简历",
   "Vault": "简历库",
   "Log Entry": "联系我",
   "Detailed Snapshot · Updated April 2026": "详细快照 · 更新于 2026 年 4 月",
+  "Detailed Snapshot · Updated June 2026": "详细快照 · 更新于 2026 年 6 月",
   "Violet Ye Financial-Style Resume Overview": "叶梓萌金融风格简历概览",
   "Education": "教育",
   "UC Berkeley": "加州大学伯克利分校",
   "Data Science + EEP · GPA 3.844": "数据科学 + 环境经济与政策 · GPA 3.844",
+  "Data Science + EEP · GPA 3.894": "数据科学 + 环境经济与政策 · GPA 3.894",
   "Experience": "经历",
   "3 Internships": "3 段实习",
   "Analyst + AIGC Fullstack": "分析师 + AIGC 全栈",
   "Research": "研究",
   "2 Major Tracks": "2 条主要研究方向",
+  "3 Major Tracks": "3 条主要研究方向",
   "Green finance + electric bus modeling": "绿色金融 + 电动公交建模",
+  "Nutrition data + digital credit + sustainability": "营养数据 + 数字信贷 + 可持续发展",
   "Skills": "技能",
   "Python / JS / SQL": "Python / JS / SQL",
+  "Python / Java / SQL": "Python / Java / SQL",
   "C++, R, Matlab, SPSS, Excel": "C++, R, Matlab, SPSS, Excel",
+  "C++, R, JavaScript, Matlab, SPSS": "C++, R, JavaScript, Matlab, SPSS",
   "Current Snapshot": "当前快照",
   "Use the sidebar to open each resume area as its own page: experience, research, projects, contact, and about.": "使用侧栏打开各个独立页面：经历、研究、项目、联系和关于。",
   "Professional Timeline": "职业时间线",
@@ -35,15 +43,19 @@ const translations = {
   "AIGC Fullstack Engineer Intern · Tezign (Shanghai)": "AIGC 全栈工程师实习生 · 特赞（上海）",
   "Mar 2026 - Present": "2026 年 3 月 - 至今",
   "Built AI simulation evaluation system for Atypica AI and practiced production-level vibe coding workflows.": "为 Atypica AI 搭建 AI 模拟评估系统，并实践生产级 AI 辅助开发流程。",
+  "Designed a web-based AI persona evaluation platform, authored an AI persona fidelity framework, and validated the protocol on 1,153 consumer cases.": "设计基于网页的 AI Persona 评估平台，撰写 AI Persona 保真度框架，并在 1,153 个消费者案例上验证评估协议。",
   "Data Analyst Intern · China-U.S. Green Fund": "数据分析实习生 · 中美绿色基金",
   "Jul 2025 - Aug 2025": "2025 年 7 月 - 2025 年 8 月",
   "Analyzed commercial solar and investment performance data and converted findings into ESG trend reports.": "分析商业太阳能与投资绩效数据，并将结果转化为 ESG 行业趋势报告。",
+  "Researched commercial solar investment, analyzed green energy project performance data, and synthesized ESG trend forecasts and investment insights.": "研究商业太阳能投资，分析绿色能源项目绩效数据，并提炼 ESG 趋势预测与投资洞察。",
   "Business Analyst · Harvard AUSCR Program": "商业分析员 · 哈佛 AUSCR 项目",
   "Apr 2023 - Sep 2023": "2023 年 4 月 - 2023 年 9 月",
   "Built an AI inventory forecasting model for Haidilao from HBS ESG case study analysis.": "基于哈佛商学院 ESG 案例分析，为海底捞构建 AI 库存预测模型。",
+  "Analyzed HBS ESG cases, built an AI inventory forecasting model for Haidilao, authored research papers, and received Outstanding Participant Honor.": "分析哈佛商学院 ESG 案例，为海底捞构建 AI 库存预测模型，撰写研究论文，并获优秀学员荣誉。",
   "Recent Logs": "近期记录",
   "First contributor paper in SCI journal": "SCI 期刊第一贡献者论文",
   "School bulletin board platform launched": "校园公告板平台上线",
+  "PackSmart AI outfit planning platform built": "PackSmart AI 穿搭规划平台完成",
   "GreenGrid desert research leadership": "GreenGrid 沙漠研究负责人",
   "Producer · T.I.n.Y Theater Club": "制作人 · T.I.n.Y 中文戏剧社",
   "Energy Club President experience": "能源社社长经历",
@@ -52,10 +64,24 @@ const translations = {
   "Commercial Bank Green Finance · SJTU": "商业银行绿色金融 · 上海交通大学",
   "Electric Bus Transition Math Modeling · SJTU": "公交电动化数学建模 · 上海交通大学",
   "Green energy investment analysis · Green Fund": "绿色能源投资分析 · 中美绿色基金",
+  "Nutrition data validation · UC Berkeley": "营养数据验证 · 加州大学伯克利分校",
+  "Digital credit policy research · Rausser College": "数字信贷政策研究 · Rausser 学院",
+  "Electric bus transition modeling · SCI publication": "公交电动化转型建模 · SCI 发表",
+  "Research Notes": "研究记录",
+  "Research Assistant · University of California, Berkeley": "研究助理 · 加州大学伯克利分校",
+  "Apr 2026 - Present": "2026 年 4 月 - 至今",
+  "Built a Google Sheets-based UPC lookup and validation workflow for 50K+ food products and standardized protocols for 11 nutrition variables.": "为 50K+ 食品产品搭建基于 Google Sheets 的 UPC 查询与验证流程，并标准化 11 项营养变量协议。",
+  "Research Assistant · Rausser College of Natural Resources": "研究助理 · Rausser 自然资源学院",
+  "May 2026 - Present": "2026 年 5 月 - 至今",
+  "Designed preliminary data strategy for a Ghana digital credit policy study, defining borrower-level variables, repayment measures, and risk characteristics.": "为加纳数字信贷政策研究设计初步数据策略，定义借款人变量、还款指标和风险特征。",
   "Builder Archive": "建设者档案",
   "Projects, Awards, and Leadership Vault": "项目、奖项与领导力档案",
   "Projects & Leadership": "项目与领导力",
+  "PackSmart": "PackSmart",
+  "Leadership": "领导力",
   "Founder of School Bulletin Board Platform, GreenGrid Research Lead, T.I.n.Y Theater Club Producer, Energy Club President.": "校园公告板平台创始人、GreenGrid 研究负责人、T.I.n.Y 中文戏剧社制作人、能源社社长。",
+  "Founded a full-stack AI travel wardrobe planner with authentication, trip planning, wardrobe management, weather-aware outfit recommendations, and persistent storage.": "创立全栈 AI 旅行衣橱规划平台，包含用户认证、行程规划、衣橱管理、天气驱动穿搭推荐和数据持久化。",
+  "Production Chair and Producer for T.I.n.Y Chinese Theater Group, coordinating schedules, logistics, cross-team communication, and production workflows.": "担任 T.I.n.Y 中文戏剧社制作部主席与制作人，协调排期、后勤、跨团队沟通和制作流程。",
   "Awards": "奖项",
   "AIME 11 (USAMO qualified), HiMCM Finalist (top 6%), National Economics Challenge China 1st Place Gold.": "AIME 11 分（晋级 USAMO）、HiMCM 决赛奖（全球前 6%）、全国经济学挑战赛中国区冠军与全国金奖。",
   "Languages": "语言",
@@ -69,8 +95,15 @@ const translations = {
   "Send Message": "发送消息",
   "About Me": "关于我",
   "A student, researcher, and visual thinker.": "学生、研究者，也是一名视觉思考者。",
+  "A data science student, researcher, and builder.": "数据科学学生、研究者和建设者。",
   "I study Data Science and Environmental Economics at UC Berkeley. My work sits between analytics and storytelling:": "我在加州大学伯克利分校学习数据科学与环境经济和政策。我的工作连接数据分析与叙事表达：",
+  "I study Data Science and Environmental Economics and Policy at UC Berkeley, with a 3.894 GPA and coursework": "我在加州大学伯克利分校学习数据科学与环境经济和政策，GPA 3.894，课程覆盖",
+  "across computer science, statistics, economics, calculus, and full-stack web development.": "计算机科学、统计学、经济学、微积分和全栈网页开发。",
+  "I study Data Science and Environmental Economics and Policy at UC Berkeley, with a 3.894 GPA and coursework across computer science, statistics, economics, calculus, and full-stack web development.": "我在加州大学伯克利分校学习数据科学与环境经济和政策，GPA 3.894，课程覆盖计算机科学、统计学、经济学、微积分和全栈网页开发。",
   "I enjoy building data-informed decisions while keeping people and context at the center.": "我喜欢在以人为中心的语境中，用数据支持更好的决策。",
+  "My recent work spans AIGC product engineering, nutrition data validation, Ghana digital credit policy research,": "我近期的工作涵盖 AIGC 产品工程、营养数据验证、加纳数字信贷政策研究、",
+  "sustainable transportation modeling, and PackSmart, an AI-powered travel wardrobe planning platform.": "可持续交通建模，以及 PackSmart 这个 AI 旅行衣橱规划平台。",
+  "My recent work spans AIGC product engineering, nutrition data validation, Ghana digital credit policy research, sustainable transportation modeling, and PackSmart, an AI-powered travel wardrobe planning platform.": "我近期的工作涵盖 AIGC 产品工程、营养数据验证、加纳数字信贷政策研究、可持续交通建模，以及 PackSmart 这个 AI 旅行衣橱规划平台。",
   "Outside coursework and research, I explore photography, travel, illustration, and skiing.": "在课程和研究之外，我也探索摄影、旅行、插画和滑雪。",
   "These interests shape how I approach problem solving and design.": "这些兴趣塑造了我理解问题和进行设计的方式。",
   "Life Outside Class": "课堂之外",
@@ -93,17 +126,20 @@ const translateTextNodes = (language) => {
   nodes.forEach((node) => {
     const text = node.textContent;
     const trimmed = text.trim();
+    const normalized = trimmed.replace(/\s+/g, " ");
 
-    if (!trimmed || !dictionary[trimmed]) {
+    if (!trimmed || !dictionary[normalized]) {
       return;
     }
 
-    node.textContent = text.replace(trimmed, dictionary[trimmed]);
+    const leading = text.match(/^\s*/)?.[0] || "";
+    const trailing = text.match(/\s*$/)?.[0] || "";
+    node.textContent = `${leading}${dictionary[normalized]}${trailing}`;
   });
 };
 
 const setupLanguageToggle = () => {
-  const anchor = document.querySelector(".side-cta") || document.querySelector(".nav-links");
+  const anchor = document.querySelector(".resume-links") || document.querySelector(".nav-links");
 
   if (!anchor) {
     return;
@@ -112,7 +148,7 @@ const setupLanguageToggle = () => {
   const button = document.createElement("button");
   button.className = "lang-toggle";
   button.type = "button";
-  anchor.insertAdjacentElement(anchor.classList.contains("side-cta") ? "beforebegin" : "afterend", button);
+  anchor.insertAdjacentElement(anchor.classList.contains("resume-links") ? "beforebegin" : "afterend", button);
 
   const applyLanguage = (language) => {
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";

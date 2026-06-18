@@ -106,7 +106,6 @@ h4 {
 }
 
 .side-cta {
-  margin-top: auto;
   text-decoration: none;
   color: #eff4f2;
   border: 1px solid #8fb2ab;
@@ -121,6 +120,16 @@ h4 {
 .side-cta:hover {
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
+}
+
+.resume-links {
+  margin-top: auto;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.side-cta-secondary {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .lang-toggle {
