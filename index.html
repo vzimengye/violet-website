@@ -3,67 +3,169 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Violet Ye</title>
-
+    <title>Violet Ye | Resume Dashboard</title>
+    <meta name="description" content="Resume dashboard for Violet Ye with education, experience, research, projects, and contact.">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
   </head>
-
   <body>
-    <header class="navbar">
-      <div class="nav-container">
-      <h2 class="logo">Violet</h2>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      </div>
-    </header>
-    <section class="hero">
-      <img src="profile.jpg" class="profile">
-      <h1>Hello, I'm Violet</h1>
-      <p>
-        Data Science & Environmental Economics and Policy student at UC Berkeley.
-        Interested in coding, economics, sustainability, and art.
-      </p>
-      <div class="socials">
-        <a href="https://github.com/vzimengye" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/violet-ye-8ba837317" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/violet.yezm/" target="_blank">Instagram</a>
-      </div>
-    </section>
+    <div class="dashboard-shell">
+      <aside class="sidebar reveal">
+        <div class="brand">
+          <h1>Violet Ledger</h1>
+          <p>Resume Portfolio</p>
+        </div>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#ledger">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#vault">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="about.html">About</a>
+        </nav>
+        <a class="side-cta" href="resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume PDF</a>
+      </aside>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-      <div class="project-card">
-      <img src="project1.jpg">
-      <h3>Electric Bus Research</h3>
-      <ul>
-        <li>Research on financial and environmental impacts of electric bus fleets.</li>
-      </ul>
-      </div>
-      <div class="project-card">
-      <img src="project2.jpg">
-      <h3>GreenGrid Summer Program</h3>
-      <ul>
-        <li>Led research and interviewed local communities about environmental awareness</li>
-        <li>Worked with a 60-person volunteer team on desert sustainability</li>
-      </ul>
-      </div>
-      </div>
-    </section>
+      <main class="dashboard-main">
+        <header id="overview" class="top-head reveal">
+          <div>
+            <p class="kicker">Detailed Snapshot · Updated April 2026</p>
+            <h2>Violet Ye Financial-Style Resume Overview</h2>
+          </div>
+          <div class="head-actions">
+            <a class="vault-btn vault-btn-light" href="resume.pdf" target="_blank" rel="noopener noreferrer">Vault</a>
+            <a class="vault-btn" href="#contact">Log Entry</a>
+          </div>
+        </header>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-      </form>
-    </section>
+        <section class="metric-grid reveal">
+          <article class="metric-card metric-dark">
+            <p class="metric-label">Education</p>
+            <h3>UC Berkeley</h3>
+            <p class="metric-sub">Data Science + EEP · GPA 3.844</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Experience</p>
+            <h3>3 Internships</h3>
+            <p class="metric-sub">Analyst + AIGC Fullstack</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Research</p>
+            <h3>2 Major Tracks</h3>
+            <p class="metric-sub">Green finance + electric bus modeling</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Skills</p>
+            <h3>Python / JS / SQL</h3>
+            <p class="metric-sub">C++, R, Matlab, SPSS, Excel</p>
+          </article>
+        </section>
+
+        <section id="ledger" class="panel-row reveal">
+          <article class="panel panel-wide">
+            <div class="panel-head">
+              <h3>Experience Ledger</h3>
+            </div>
+            <div class="ledger-list">
+              <div class="ledger-item">
+                <p class="entry-title">AIGC Fullstack Engineer Intern · Tezign (Shanghai)</p>
+                <p class="entry-meta">Mar 2026 - Present</p>
+                <p class="entry-note">Built AI simulation evaluation system for Atypica AI and practiced production-level vibe coding workflows.</p>
+              </div>
+              <div class="ledger-item">
+                <p class="entry-title">Data Analyst Intern · China-U.S. Green Fund</p>
+                <p class="entry-meta">Jul 2025 - Aug 2025</p>
+                <p class="entry-note">Analyzed commercial solar and investment performance data and converted findings into ESG trend reports.</p>
+              </div>
+              <div class="ledger-item">
+                <p class="entry-title">Business Analyst · Harvard AUSCR Program</p>
+                <p class="entry-meta">Apr 2023 - Sep 2023</p>
+                <p class="entry-note">Built an AI inventory forecasting model for Haidilao from HBS ESG case study analysis.</p>
+              </div>
+            </div>
+          </article>
+          <article class="panel panel-side">
+            <div class="panel-head">
+              <h3>Recent Logs</h3>
+            </div>
+            <ul class="log-list">
+              <li><span>First contributor paper in SCI journal</span><b>+Research</b></li>
+              <li><span>School bulletin board platform launched</span><b>+Builder</b></li>
+              <li><span>GreenGrid desert research leadership</span><b>+Impact</b></li>
+              <li><span>Producer · T.I.n.Y Theater Club</span><b>+Ops</b></li>
+              <li><span>Energy Club President experience</span><b>+Leadership</b></li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="research" class="panel reveal">
+          <div class="panel-head">
+            <h3>Research Breakdown</h3>
+          </div>
+          <div class="bar-group">
+            <div class="bar-item">
+              <span class="bar-label">Commercial Bank Green Finance · SJTU</span>
+              <div class="bar-track"><i style="width: 90%"></i></div>
+            </div>
+            <div class="bar-item">
+              <span class="bar-label">Electric Bus Transition Math Modeling · SJTU</span>
+              <div class="bar-track"><i style="width: 84%"></i></div>
+            </div>
+            <div class="bar-item">
+              <span class="bar-label">Green energy investment analysis · Green Fund</span>
+              <div class="bar-track"><i style="width: 74%"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="vault" class="panel reveal">
+          <div class="panel-head">
+            <h3>Projects, Awards, and Leadership Vault</h3>
+          </div>
+          <div class="vault-grid">
+            <article>
+              <h4>Projects & Leadership</h4>
+              <p>Founder of School Bulletin Board Platform, GreenGrid Research Lead, T.I.n.Y Theater Club Producer, Energy Club President.</p>
+            </article>
+            <article>
+              <h4>Awards</h4>
+              <p>AIME 11 (USAMO qualified), HiMCM Finalist (top 6%), National Economics Challenge China 1st Place Gold.</p>
+            </article>
+            <article>
+              <h4>Languages</h4>
+              <p>English, Mandarin, Japanese (basic).</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="panel reveal">
+          <div class="panel-head">
+            <h3>Contact Entry</h3>
+          </div>
+          <form
+            id="contactForm"
+            class="contact-form"
+            data-recipient="violet.zimengye@berkeley.edu"
+            data-endpoint=""
+            novalidate
+          >
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button id="contactSubmit" type="submit" class="vault-btn">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
