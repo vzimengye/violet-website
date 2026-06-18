@@ -112,8 +112,8 @@ h4 {
 
 .top-head {
   padding: 1rem 1.1rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px auto;
   align-items: center;
   gap: 0.9rem;
 }
@@ -133,6 +133,23 @@ h4 {
 .head-actions {
   display: flex;
   gap: 0.5rem;
+}
+
+.headshot-card {
+  margin: 0;
+  width: 112px;
+  aspect-ratio: 1;
+  border: 2px solid var(--line);
+  background: #efe9dd;
+  overflow: hidden;
+}
+
+.headshot-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 .vault-btn {
@@ -290,6 +307,15 @@ h4 {
   border: 1px solid #9d9589;
   padding: 0.7rem;
   background: #f2eee7;
+}
+
+.vault-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid #9d9589;
+  margin-bottom: 0.62rem;
+  display: block;
 }
 
 .vault-grid h4 {
@@ -458,8 +484,12 @@ main {
   }
 
   .top-head {
-    flex-direction: column;
     align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .headshot-card {
+    width: min(180px, 100%);
   }
 
   .about-container {
