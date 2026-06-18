@@ -1,4 +1,24 @@
 const reveals = document.querySelectorAll(".reveal");
+const navLinks = document.querySelectorAll(".side-nav a");
+
+if (navLinks.length > 0) {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  navLinks.forEach((link) => {
+    const linkPage = link.getAttribute("href")?.split("#")[0];
+
+    if (linkPage === currentPage) {
+      link.setAttribute("aria-current", "page");
+    }
+
+    link.addEventListener("click", () => {
+      link.classList.add("is-clicking");
+      window.setTimeout(() => {
+        link.classList.remove("is-clicking");
+      }, 260);
+    });
+  });
+}
 
 if ("IntersectionObserver" in window && reveals.length > 0) {
   const observer = new IntersectionObserver(
