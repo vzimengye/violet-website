@@ -3,77 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Violet Ye | Resume Dashboard</title>
-    <meta name="description" content="Resume dashboard for Violet Ye with education, experience, research, projects, and contact.">
+    <title data-zh="叶梓萌 Violet Ye">Violet Ye</title>
+    <meta name="description" content="Violet (Zimeng) Ye, a UC Berkeley student studying Computer Science and Economics, working on machine learning, data engineering, and full-stack projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("violet-language")==="zh")document.documentElement.classList.add("lang-pending")}catch(e){}</script>
     <script defer src="script.js"></script>
   </head>
   <body>
     <div class="dashboard-shell">
-      <aside class="sidebar reveal">
+      <aside class="sidebar">
         <div class="brand">
-          <h1>Violet Ledger</h1>
-          <p>Resume Portfolio</p>
+          <a class="brand-name" href="index.html">Violet Ye</a>
+          <p data-zh="计算机 + 经济 · 加州大学伯克利分校">CS + Econ · UC Berkeley</p>
         </div>
         <nav class="side-nav" aria-label="Main navigation">
-          <a href="index.html">Overview</a>
-          <a href="experience.html">Experience</a>
-          <a href="research.html">Research</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+          <a href="index.html" aria-current="page" data-zh="概览">Overview</a>
+          <a href="experience.html" data-zh="经历">Experience</a>
+          <a href="research.html" data-zh="研究">Research</a>
+          <a href="projects.html" data-zh="项目">Projects</a>
+          <a href="about.html" data-zh="关于">About</a>
+          <a href="contact.html" data-zh="联系">Contact</a>
         </nav>
-        <div class="resume-links">
-          <a class="side-cta" href="resume.pdf" download>English Resume</a>
-          <a class="side-cta side-cta-secondary" href="简历.pdf" download>中文简历</a>
+        <div class="side-tools">
+          <button class="lang-toggle" type="button" aria-label="Switch language">中文</button>
+          <a class="side-cta" href="resume.pdf" target="_blank" rel="noopener" data-zh="简历 (PDF)">Resume (PDF)</a>
         </div>
       </aside>
 
       <main class="dashboard-main">
-        <header id="overview" class="top-head reveal">
+        <header class="top-head has-shot reveal">
           <div>
-            <p class="kicker">Detailed Snapshot · Updated June 2026</p>
-            <h2>Violet Ye Financial-Style Resume Overview</h2>
+            <p class="kicker" data-zh="概览">Overview</p>
+            <h1 data-zh="你好，我是叶梓萌（Violet）">Hi, I&#x27;m Violet (Zimeng) Ye</h1>
           </div>
-          <figure class="headshot-card">
-            <img src="Daily Headshot2.jpg" alt="Violet Ye portrait">
-          </figure>
-          <div class="head-actions">
-            <a class="vault-btn vault-btn-light" href="resume.pdf" download>English Resume</a>
-            <a class="vault-btn vault-btn-light" href="简历.pdf" download>中文简历</a>
-            <a class="vault-btn" href="contact.html">Log Entry</a>
-          </div>
+          <figure class="headshot-card"><img src="images/headshot.jpg" alt="Portrait of Violet Ye" width="400" height="400"></figure>
         </header>
-
         <section class="metric-grid reveal">
           <article class="metric-card metric-dark">
-            <p class="metric-label">Education</p>
-            <h3>UC Berkeley</h3>
-            <p class="metric-sub">Data Science + EEP · GPA 3.894</p>
+            <p class="metric-label" data-zh="教育">Education</p>
+            <h2 data-zh="加州大学伯克利分校">UC Berkeley</h2>
+            <p class="metric-sub" data-zh="计算机 + 经济（拟申报）· GPA 3.88 · 2028 届">CS + Economics (intended) · GPA 3.88 · Class of 2028</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">Experience</p>
-            <h3>3 Internships</h3>
-            <p class="metric-sub">Analyst + AIGC Fullstack</p>
+            <p class="metric-label" data-zh="现在">Now</p>
+            <h2 data-zh="机器学习工程实习生">ML Engineering Intern</h2>
+            <p class="metric-sub" data-zh="iPick.AI · 2026 年 8 月起">iPick.AI · since Aug 2026</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">Research</p>
-            <h3>3 Major Tracks</h3>
-            <p class="metric-sub">Nutrition data + digital credit + sustainability</p>
+            <p class="metric-label" data-zh="研究">Research</p>
+            <h2 data-zh="数据工程研究助理">Data Engineering RA</h2>
+            <p class="metric-sub" data-zh="加州大学伯克利分校 · 5 万+ 食品营养数据">UC Berkeley · nutrition data at 50K+ product scale</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">Skills</p>
-            <h3>Python / Java / SQL</h3>
-            <p class="metric-sub">C++, R, JavaScript, Matlab, SPSS</p>
+            <p class="metric-label" data-zh="技能">Skills</p>
+            <h2 data-zh="Python / Java / TypeScript">Python / Java / TypeScript</h2>
+            <p class="metric-sub" data-zh="SQL、C++、JavaScript、R、React、Next.js、Node.js">SQL, C++, JavaScript, R, React, Next.js, Node.js</p>
           </article>
+        </section>
+        <section class="panel reveal">
+          <div class="panel-head"><h2 data-zh="最近在做">What I&#x27;m working on</h2></div>
+          <ul class="plain-list">
+            <li data-zh="在 iPick.AI 搭建强化学习排序系统，用每周股票表现作为反馈，覆盖 5000+ 只股票。">Training a reinforcement learning ranker at iPick.AI that learns from weekly stock performance across 5000+ tickers.</li>
+            <li data-zh="为 5 万+ 食品搭建 UPC 级营养数据 ETL 流水线，并训练模型给不确定的匹配打分。">Building an ETL pipeline for UPC-level nutrition data on 50K+ food products, plus a model that scores uncertain matches.</li>
+            <li data-zh="在微软 MIND 数据集上做端到端新闻推荐系统，从召回、排序一直到 FastAPI 服务。">Working on an end-to-end news recommender on Microsoft&#x27;s MIND dataset, from retrieval and ranking to a FastAPI service.</li>
+            <li data-zh="把在特赞做的 AI Persona 评估和可解释性研究整理成论文，准备投 CHI。">Writing up AI persona evaluation and interpretability work from Tezign as a paper for CHI.</li>
+          </ul>
+          <p class="callout"><span data-zh="我正在找 2027 年暑期软件工程和机器学习方向的实习。">I&#x27;m looking for Summer 2027 internships in software engineering and machine learning. </span><a href="contact.html" data-zh="联系我">Get in touch</a></p>
         </section>
 
-        <section class="panel reveal">
-          <div class="panel-head">
-            <h3>Current Snapshot</h3>
-          </div>
-          <p class="entry-note">Use the sidebar to open each resume area as its own page: experience, research, projects, contact, and about.</p>
-        </section>
+        <footer class="site-foot">
+          <span>© 2026 Violet (Zimeng) Ye</span>
+          <span><span data-zh="最后更新于 2026 年 10 月">Last updated October 2026</span></span>
+        </footer>
       </main>
     </div>
   </body>

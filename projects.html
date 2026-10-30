@@ -3,69 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Violet Ye</title>
-    <meta name="description" content="Projects, awards, and leadership for Violet Ye.">
+    <title data-zh="项目 | 叶梓萌">Projects | Violet Ye</title>
+    <meta name="description" content="Projects by Violet Ye, including a news recommendation system, PackSmart, and Atpio, plus leadership and awards.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("violet-language")==="zh")document.documentElement.classList.add("lang-pending")}catch(e){}</script>
     <script defer src="script.js"></script>
   </head>
   <body>
     <div class="dashboard-shell">
-      <aside class="sidebar reveal">
+      <aside class="sidebar">
         <div class="brand">
-          <h1>Violet Ledger</h1>
-          <p>Resume Portfolio</p>
+          <a class="brand-name" href="index.html">Violet Ye</a>
+          <p data-zh="计算机 + 经济 · 加州大学伯克利分校">CS + Econ · UC Berkeley</p>
         </div>
         <nav class="side-nav" aria-label="Main navigation">
-          <a href="index.html">Overview</a>
-          <a href="experience.html">Experience</a>
-          <a href="research.html">Research</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+          <a href="index.html" data-zh="概览">Overview</a>
+          <a href="experience.html" data-zh="经历">Experience</a>
+          <a href="research.html" data-zh="研究">Research</a>
+          <a href="projects.html" aria-current="page" data-zh="项目">Projects</a>
+          <a href="about.html" data-zh="关于">About</a>
+          <a href="contact.html" data-zh="联系">Contact</a>
         </nav>
-        <div class="resume-links">
-          <a class="side-cta" href="resume.pdf" download>English Resume</a>
-          <a class="side-cta side-cta-secondary" href="简历.pdf" download>中文简历</a>
+        <div class="side-tools">
+          <button class="lang-toggle" type="button" aria-label="Switch language">中文</button>
+          <a class="side-cta" href="resume.pdf" target="_blank" rel="noopener" data-zh="简历 (PDF)">Resume (PDF)</a>
         </div>
       </aside>
 
       <main class="dashboard-main">
         <header class="top-head reveal">
           <div>
-            <p class="kicker">Builder Archive</p>
-            <h2>Projects, Awards, and Leadership Vault</h2>
-          </div>
-          <div class="head-actions">
-            <a class="vault-btn vault-btn-light" href="resume.pdf" download>English Resume</a>
-            <a class="vault-btn" href="contact.html">Log Entry</a>
+            <p class="kicker" data-zh="项目">Projects</p>
+            <h1 data-zh="做过的东西">Things I&#x27;ve built</h1>
           </div>
         </header>
-
         <section class="panel reveal">
-          <div class="panel-head">
-            <h3>Projects, Awards, and Leadership Vault</h3>
+          <div class="panel-head"><h2 data-zh="项目">Projects</h2></div>
+          <div class="project-grid">
+          <article class="project-card">
+            <h3 data-zh="端到端新闻推荐系统">End-to-End News Recommendation System</h3>
+            <p class="tech">scikit-learn · FastAPI · MLflow · FAISS</p>
+            <p class="entry-meta" data-zh="2026 年 9 月至今">Sep 2026 to Present</p>
+            <p data-zh="把微软 MIND 曝光日志处理成带标签的点击样本，从热门召回做到逻辑回归排序，用 NDCG/MRR 评估、MLflow 记录实验，通过 FastAPI 提供服务，带请求日志和 PSI 漂移检测。下一步是基于物品的协同过滤、FAISS 向量检索和 LightGBM 排序。">Turns Microsoft&#x27;s MIND impression logs into labeled click data, then goes from popularity retrieval to a logistic regression ranker with NDCG/MRR evaluation and MLflow tracking. It&#x27;s served through FastAPI with request logging and PSI drift checks. Next up is item-based CF, FAISS embedding search, and a LightGBM ranker.</p>
+          </article>
+          <article class="project-card">
+            <h3 data-zh="PackSmart">PackSmart</h3>
+            <p class="tech">Node.js · JavaScript · REST APIs · OpenAI API · Hugging Face</p>
+            <p class="entry-meta" data-zh="2026 年 3 月至今">Mar 2026 to Present</p>
+            <p data-zh="一个旅行穿搭规划应用，根据行程活动和天气，从用户上传的衣橱里推荐每天的穿搭，用规则打分加 OpenAI API。现在在做蒸馏数据流水线，生成合成的衣橱和行程场景，用大模型按严格的 JSON 格式标注并用规则校验过滤，让小模型替代 API 调用。">A travel outfit planner that picks daily outfits from your own closet based on trip activities and the weather, using rule-based scoring plus OpenAI API calls. I&#x27;m now building a distillation pipeline that generates synthetic closet and trip scenarios, labels them with a large teacher model under a strict JSON schema, and filters them with validators, so a smaller model can replace the API calls.</p>
+          </article>
+          <article class="project-card">
+            <h3 data-zh="Atpio">Atpio</h3>
+            <p class="tech">Next.js · TypeScript · REST APIs · LLMs</p>
+            <p class="entry-meta" data-zh="2026 年在特赞完成">Built at Tezign, 2026</p>
+            <p data-zh="用自然语言描述想收集的反馈，Atpio 就会生成表单结构和可以嵌入任何网站的组件。回答在存储前会经过个人信息脱敏。">Describe the feedback you want in plain language and Atpio generates the form schema and an embeddable widget you can drop into any site. Responses go through a PII-redaction layer before they&#x27;re stored.</p>
+          </article>
           </div>
+          <p class="entry-note"><a href="https://github.com/vzimengye" target="_blank" rel="noopener" data-zh="在 GitHub 上查看更多">More on GitHub</a></p>
+        </section>
+        <section class="panel reveal">
+          <div class="panel-head"><h2 data-zh="领导力与奖项">Leadership &amp; Awards</h2></div>
           <div class="vault-grid">
             <article>
-              <img src="project1.jpg" alt="Project workspace preview">
-              <h4>PackSmart</h4>
-              <p>Founded a full-stack AI travel wardrobe planner with authentication, trip planning, wardrobe management, weather-aware outfit recommendations, and persistent storage.</p>
+              <img src="images/greendesert.jpg" alt="GreenDesert team doing field work in the desert" width="1200" height="800" loading="lazy">
+              <h3 data-zh="GreenDesert 公益小组">GreenDesert Public Welfare Group</h3>
+              <p data-zh="组长，带领一个关注沙漠研究和实地考察的学生公益小组。">Team Lead of a student public welfare group focused on desert research and field trips.</p>
             </article>
             <article>
-              <img src="project2.jpg" alt="Project presentation preview">
-              <h4>Leadership</h4>
-              <p>Production Chair and Producer for T.I.n.Y Chinese Theater Group, coordinating schedules, logistics, cross-team communication, and production workflows.</p>
+              <img src="images/theater.jpg" alt="T.I.n.Y Chinese Theater Group cast photo" width="1200" height="800" loading="lazy">
+              <h3 data-zh="T.I.n.Y 中文戏剧社">T.I.n.Y Chinese Theater Group</h3>
+              <p data-zh="担任制作部主席和制作人，负责排期、后勤和各组之间的协调。">Production Chair and Producer. I handle schedules, logistics, and keeping the teams in sync.</p>
             </article>
             <article>
-              <h4>Awards</h4>
-              <p>AIME 11 (USAMO qualified), HiMCM Finalist (top 6%), National Economics Challenge China 1st Place Gold.</p>
-            </article>
-            <article>
-              <h4>Languages</h4>
-              <p>English, Mandarin, Japanese (basic).</p>
+              <h3 data-zh="奖项">Awards</h3>
+              <p data-zh="AIME 11/15，晋级 USAMO；HiMCM 决赛奖；全国经济学挑战赛中国区第一。">AIME 11/15 and qualified for USAMO. HiMCM Finalist. National Economics Challenge, 1st in China.</p>
+              <h3 data-zh="其他">Other</h3>
+              <p data-zh="高中时创办了校园公告板平台。会说英语和中文，也会一点日语。">Founded a school bulletin board platform in high school. I speak English and Mandarin, plus some Japanese.</p>
             </article>
           </div>
         </section>
+
+        <footer class="site-foot">
+          <span>© 2026 Violet (Zimeng) Ye</span>
+          <span><span data-zh="最后更新于 2026 年 10 月">Last updated October 2026</span></span>
+        </footer>
       </main>
     </div>
   </body>

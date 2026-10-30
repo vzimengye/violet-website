@@ -3,54 +3,69 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Violet Ye</title>
-    <meta name="description" content="Learn more about Violet Ye's background, interests, and creative perspective.">
+    <title data-zh="关于 | 叶梓萌">About | Violet Ye</title>
+    <meta name="description" content="About Violet Ye, a UC Berkeley student in Computer Science and Economics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("violet-language")==="zh")document.documentElement.classList.add("lang-pending")}catch(e){}</script>
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="navbar">
-      <div class="nav-container">
-        <a class="logo" href="index.html">Violet Ye</a>
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <a class="brand-name" href="index.html">Violet Ye</a>
+          <p data-zh="计算机 + 经济 · 加州大学伯克利分校">CS + Econ · UC Berkeley</p>
+        </div>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a href="index.html" data-zh="概览">Overview</a>
+          <a href="experience.html" data-zh="经历">Experience</a>
+          <a href="research.html" data-zh="研究">Research</a>
+          <a href="projects.html" data-zh="项目">Projects</a>
+          <a href="about.html" aria-current="page" data-zh="关于">About</a>
+          <a href="contact.html" data-zh="联系">Contact</a>
         </nav>
-      </div>
-    </header>
+        <div class="side-tools">
+          <button class="lang-toggle" type="button" aria-label="Switch language">中文</button>
+          <a class="side-cta" href="resume.pdf" target="_blank" rel="noopener" data-zh="简历 (PDF)">Resume (PDF)</a>
+        </div>
+      </aside>
 
-    <main>
-      <section class="about-container reveal">
-        <div class="about-left">
-          <img src="Daily Headshot2.jpg" alt="Violet Ye portrait" class="about-photo">
-        </div>
-        <div class="about-right">
-          <p class="eyebrow">About Me</p>
-          <h1>A data science student, researcher, and builder.</h1>
-          <p>
-            I study Data Science and Environmental Economics and Policy at UC Berkeley, with a 3.894 GPA and coursework
-            across computer science, statistics, economics, calculus, and full-stack web development.
-          </p>
-          <p>
-            My recent work spans AIGC product engineering, nutrition data validation, Ghana digital credit policy research,
-            sustainable transportation modeling, and PackSmart, an AI-powered travel wardrobe planning platform.
-          </p>
-        </div>
-      </section>
+      <main class="dashboard-main">
+        <header class="top-head reveal">
+          <div>
+            <p class="kicker" data-zh="关于">About</p>
+            <h1 data-zh="关于我">A bit about me</h1>
+          </div>
+        </header>
+        <section class="panel reveal">
+          <div class="panel-head"><h2 data-zh="关于我">About Me</h2></div>
+          <div class="about-grid">
+            <img class="about-photo" src="images/headshot.jpg" alt="Portrait of Violet Ye" width="400" height="400">
+            <div class="about-text">
+              <p data-zh="我是加州大学伯克利分校的学生，学计算机和经济。我在日本出生，在中国长大，现在住在伯克利。">I study Computer Science and Economics at UC Berkeley. I grew up in China, was born in Japan, and now live in Berkeley.</p>
+              <p data-zh="我现在主要做机器学习和数据工程。我喜欢那种模型只是一部分的项目，还得清洗数据、检查结果到底靠不靠谱，最后做出别人真的能用的东西。">Most of my work right now is machine learning and data engineering. I like projects where the model is only part of the job and you also have to clean the data, check whether the results hold up, and ship something people can use.</p>
+              <p data-zh="在学计算机之前，我花了很多时间在数学竞赛和 ESG、绿色金融研究上，高中时也因此做了电动公交车队的建模。">Before CS, I spent a lot of time on math competitions and on ESG and green finance research, which is how I ended up modeling electric bus fleets in high school.</p>
+              <p data-zh="课外我喜欢摄影、滑雪、旅行、画画，也在中文戏剧社做制作。">Outside class I take photos, ski, travel, draw, and help produce shows with the Chinese theater group.</p>
+            </div>
+          </div>
+        </section>
+        <section class="panel reveal">
+          <div class="panel-head"><h2 data-zh="课堂之外">Life Outside Class</h2></div>
+          <div class="gallery">
+            <img src="images/ski.jpg" alt="Skiing on a snowy mountain" width="1200" height="1600" loading="lazy">
+            <img src="images/theater.jpg" alt="Theater group cast photo after a show" width="1200" height="800" loading="lazy">
+            <img src="images/camera.jpg" alt="Taking photos with a camera" width="1080" height="1620" loading="lazy">
+          </div>
+        </section>
 
-      <section class="section reveal">
-        <div class="section-head">
-          <p class="eyebrow">Life Outside Class</p>
-          <h2>Gallery</h2>
-        </div>
-        <div class="gallery">
-          <img src="hobby1.jpg" alt="Hobby photo 1">
-          <img src="hobby2.jpg" alt="Hobby photo 2">
-          <img src="hobby3.jpg" alt="Hobby photo 3">
-        </div>
-      </section>
-    </main>
+        <footer class="site-foot">
+          <span>© 2026 Violet (Zimeng) Ye</span>
+          <span><span data-zh="最后更新于 2026 年 10 月">Last updated October 2026</span></span>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
